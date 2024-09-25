@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #303030;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #D4AF37;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.burger-card {
+    background-color: #C7A300;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.burger-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.buy-btn {
+    background-color: #FF4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #FF6347;
+}
