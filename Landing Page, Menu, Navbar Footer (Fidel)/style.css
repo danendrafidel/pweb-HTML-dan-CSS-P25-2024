@@ -156,7 +156,6 @@ body {
 .founder-info {
   display: flex;
   align-items: center;
-  margin-top: 100px;
 }
 
 .founder-img {
@@ -171,29 +170,82 @@ body {
   margin-top: 100px;
 }
 
-.menu-button {
-  padding: 20px 30px;
-  font-size: 20px;
-  background-color: #ff4500;
-  font-weight: bolder;
-  border: none;
-  color: white;
-  text-shadow: 2px 2px 0px gray;
-  cursor: pointer;
-  border-radius: 100px;
-  margin-bottom: 100px;
-}
-.menu-button:hover {
-  background-color: #cea800;
-}
 .burger-side-img {
   max-width: 100%;
   position: flex;
   opacity: 0.5;
   margin-left: 300px;
+  margin-bottom: 100px;
 }
 
-/* Media Queries for responsiveness */
+/* Menu section styles */
+.menu-header {
+  background-color: #cea800;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 100vw;
+  position: relative;
+  left: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.menu-header h2 {
+  margin: 0;
+  font-size: 54px;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.menu-item {
+  text-align: center;
+}
+.menu-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.item-name {
+  color: #ff4500;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.item-description {
+  color: white;
+  font-size: 28px;
+  margin-top: 20px;
+}
+.item-price {
+  color: #cea800;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.menu-footer {
+  background-color: #cea800;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 54px;
+  font-weight: bolder;
+  width: 100vw;
+  position: relative;
+  left: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 50px;
+}
+
+/* Responsiveness */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5em;
@@ -211,7 +263,6 @@ body {
     padding: 12px 24px;
   }
 }
-
 @media (max-width: 480px) {
   .hero-content h1 {
     font-size: 2em;
