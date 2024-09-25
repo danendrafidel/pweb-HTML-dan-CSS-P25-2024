@@ -49,7 +49,7 @@ body {
 
 .navbar ul li a:hover {
   color: black;
-  text-decoration: underline;
+  transition: background-color 0.3s ease;
 }
 
 .navbar .logo {
@@ -114,9 +114,10 @@ body {
 
 .landing-content button:hover {
   background-color: #cea800;
+  transition: background-color 0.3s ease;
 }
 
-.burger-img {
+.landing-burger-img {
   width: 50%;
   height: auto;
   border-radius: 20px;
@@ -245,7 +246,79 @@ body {
   margin-top: 50px;
 }
 
-/* Responsiveness */
+/*Gallert Section*/
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  background-color: black;
+}
+
+.burger-card {
+  background-color: #d4af37;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-burger-img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.card-title {
+  color: white;
+  font-weight: bold;
+}
+
+.card-desc {
+  color: white;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.buy-btn {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-shadow: 2px 2px 0px gray;
+}
+
+.buy-btn:hover {
+  background-color: black;
+  text-decoration: underline;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .burger-card {
+    width: 90%;
+    max-width: 300px;
+  }
+}
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5em;
