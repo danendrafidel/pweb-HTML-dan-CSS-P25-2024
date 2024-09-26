@@ -11,6 +11,9 @@ html {
 body {
   background-color: #000;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 /* Navigation Bar */
 .navbar {
@@ -84,15 +87,14 @@ body {
 
 .burger-menu span {
   display: block;
-  width: 100%;
+  width: 70%;
   height: 4px;
   background-color: #333;
   border-radius: 2px;
 }
 /* Contact Section */
 .contact-section {
-  background-color: #000; /* Background hitam */
-  color: #ffd700; /* Warna teks kuning */
+  color: #ffd700;
   padding: 50px 0;
 }
 
@@ -106,7 +108,8 @@ body {
 
 .contact-image img {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 100px;
+  margin-top: 100px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -165,7 +168,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-
 /* Footer Styling */
 footer {
   background-color: black;
@@ -186,7 +188,7 @@ footer {
 
 .footer-section h3 {
   font-size: 24px;
-  color: #ffcc00;
+  color: #cea800;
   margin-bottom: 10px;
 }
 
@@ -199,7 +201,7 @@ footer {
 
 .footer-section a {
   text-decoration: none;
-  color: #ffcc00;
+  color: #cea800;
   display: block;
   margin: 5px 0;
 }
@@ -213,7 +215,6 @@ footer {
   padding: 10px;
   border-top: 1px solid white;
   margin-top: 20px;
-  font-family: "Arial", sans-serif;
   font-size: 14px;
 }
 

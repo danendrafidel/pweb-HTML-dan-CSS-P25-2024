@@ -11,7 +11,9 @@ html {
 body {
   background-color: #000;
 }
-
+body::-webkit-scrollbar {
+  display: none;
+}
 /* Navigation Bar */
 .navbar {
   display: flex;
@@ -324,7 +326,7 @@ body {
 }
 
 .burger-card {
-  background-color: #d4af37;
+  background-color: #cea800;
   border-radius: 20px;
   padding: 20px;
   width: 300px;
@@ -400,7 +402,7 @@ body {
 
 .testimonial-title {
   font-size: 3rem;
-  color: #d4af37;
+  color: #cea800;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -438,7 +440,7 @@ body {
 }
 
 .customer-rating {
-  color: #d4af37;
+  color: #cea800;
   margin-bottom: 0.5rem;
 }
 
@@ -467,7 +469,7 @@ footer {
 
 .footer-section h3 {
   font-size: 24px;
-  color: #ffcc00;
+  color: #cea800;
   margin-bottom: 10px;
 }
 
@@ -480,7 +482,7 @@ footer {
 
 .footer-section a {
   text-decoration: none;
-  color: #ffcc00;
+  color: #cea800;
   display: block;
   margin: 5px 0;
 }
@@ -494,7 +496,6 @@ footer {
   padding: 10px;
   border-top: 1px solid white;
   margin-top: 20px;
-  font-family: "Arial", sans-serif;
   font-size: 14px;
 }
 
