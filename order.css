@@ -1,1 +1,149 @@
 /*Styling yang contact disini ya*/
+
+/* Basic styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue";
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cea800;
+  padding: 10px 30px;
+  position: fixed;
+  margin-top: 40px;
+  left: 100px;
+  right: 100px;
+  border-radius: 100px;
+  z-index: 100;
+  box-shadow: 0 4px 8px white;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 0px black;
+}
+
+.navbar .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar .logo span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* Burger Menu */
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  justify-content: left;
+}
+
+.burger-menu span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+}
+/* Contact Kerjain Disini */
+
+/* Footer Styling */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-section h3 {
+  font-size: 24px;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #ffcc00;
+  display: block;
+  margin: 5px 0;
+}
+
+.footer-section a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid white;
+  margin-top: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+}
+
+.footer-section .fa {
+  margin-right: 10px;
+}
