@@ -7,9 +7,17 @@
 
 body {
   font-family: 'Bebas Neue', sans-serif;
-  background-color: #303030;
+  background-color: #000000;
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 /* ini CSS Header */
 header {
@@ -17,29 +25,67 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #d4af37;
+  background-color: #000000;
 }
 
-nav ul {
-  list-style: none;
+/* ini CSS navbar */
+.navbar {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cea800;
+  padding: 10px 30px;
+  position: fixed;
+  margin-top: 40px;
+  left: 100px;
+  right: 100px;
+  border-radius: 100px;
+  z-index: 100;
+  box-shadow: 0 4px 8px white;
 }
 
-nav ul li {
-  display: inline;
+.navbar ul {
+  display: flex;
+  list-style: none;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li a {
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
   text-decoration: none;
-  color: #fff;
   font-weight: bold;
-  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.logo h1, .ga h1 {
-  font-size: 24px;
-  color: #fff;
+.navbar ul li a:hover {
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 0px black;
+}
+
+.navbar .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar .logo span {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 /* ini CSS About */
@@ -66,8 +112,15 @@ blockquote {
   letter-spacing: 1px;
   font-size: 30px;
   line-height: 1.5;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-left: 20px;
+}
+
+.bg-burger {
+  max-width: 30%;
+  position: flex;
+  opacity: 0.5;
+  margin-left: 100px;
 }
 
 .highlight {
@@ -130,19 +183,20 @@ blockquote {
   border-radius: 40px;
   padding: 20px;
   width: 300px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 1px;
   box-shadow: 0 8px 30px rgba(255, 255, 255, 0.5);
 }
 
 .burger-img {
+  position: relative;
+  left: -25%;
   transform: rotate(20deg);
   width: 150%;
   height: auto;
   border-radius: 20px;
-  margin-bottom: 50px;
-  position: relative;
-  left: -25%;
+  margin-bottom: 20px;
+  margin-top: -50px;
 }
 
 .peanut-burger {
@@ -153,7 +207,9 @@ blockquote {
   height: auto;
   border-radius: 20px;
   margin-bottom: 20px;
+  margin-top: -50px;
 }
+
 
 .price {
   font-size: 18px;
@@ -164,15 +220,15 @@ blockquote {
 
 .buy-btn {
   background-color: #ff4500;
-  font-family: 'Bebas Neue', sans-serif;
   color: #fff;
   border: none;
-  width: 140px;
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   transition: background-color 0.3s ease;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
 }
 
 .buy-btn:hover {
