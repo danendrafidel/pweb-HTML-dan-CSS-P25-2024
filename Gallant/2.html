@@ -4,33 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Big Bro's Burger</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style2.css" />
   </head>
+
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">MENU</a></li>
-          <li><a href="#">ORDER</a></li>
-          <li><a href="#">CUSTOMER</a></li>
-        </ul>
-      </nav>
+      <!-- Navigation -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="#customer">Customer</a></li>
+      </ul>
+      <div class="burger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="logo">
+        <img src="logo.png" alt="Big Bro's Burger Logo" />
+        <span>BIG BRO'S BURGER</span>
+      </div>
+    </nav>
+
       <div class="logo">
         <h1>BIG BRO'S BURGER</h1>
       </div>
     </header>
 
+    <!--Section about product-->
+    <section class="about-product">
+      <div class="about-content">
+          <blockquote>
+              "OUR BURGERS, ESTABLISHED <span class="highlight">SINCE 2018</span>, ARE MADE WITH THE <span class="highlight">BEST INGREDIENTS</span>, INDULGE IN THE PERFERCT BALANCE OF FLAVORS, CRAFTED WITH PASSION BY OUR FOUNDER, <span class="highlight">NARJI</span>."
+          </blockquote>
+      </div>
+      <div class="founder">
+      <!-- Gambar founder -->
+       <img src="author.png" alt="Founder" class="founder-img">
+       <p class="founder-name">MAS NARJI</p>
+      </div>
+      <button class="menu-btn">SEE OUR MENU</button>
+    </section>
+
+    <!--Section menu burger-->
     <section class="menu">
       <div class="burger-card">
         <img src="bg super.png" alt="Super3 Burger" class="burger-img" />
         <h2>SUPER3 BURGER</h2>
+        <br>
         <p>
           Experience the luxury of three premium beef patties, melted cheddar,
           fresh lettuce, and our signature truffle sauce. The perfect
           combination of rich flavors in every bite.
         </p>
+        <br>
+        <br>
+        <br>
         <p class="price">Total Price: <strong>33K</strong></p>
         <button class="buy-btn">BUY NOW</button>
       </div>
@@ -38,14 +75,16 @@
         <img
           src="bg peanut sauce.png"
           alt="Premium Peanut Burger"
-          class="burger-img"
+          class="peanut-burger"
         />
         <h2>PREMIUM PEANUT BURGER</h2>
+        <br>
         <p>
           Savor the perfect blend of juicy premium beef, crisp lettuce, fresh
           tomatoes, and our signature peanut sauce for a unique, rich flavor
           experience.
         </p>
+        <br>
         <p class="price">Total Price: <strong>36K</strong></p>
         <button class="buy-btn">BUY NOW</button>
       </div>
